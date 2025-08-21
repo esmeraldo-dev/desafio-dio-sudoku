@@ -71,7 +71,6 @@ public class Main {
                 spaces.get(i).add(currentSpace);
             }
         }
-
         board = new Board(spaces);
         System.out.println("O jogo está pronto para começar.");
     }
