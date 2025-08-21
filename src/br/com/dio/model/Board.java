@@ -47,7 +47,7 @@ public class Board {
         return true;
     }
 
-    public boolean clearValue(final int col, final int row){
+    public boolean clearValue(final int col, final int row) {
         var space = spaces.get(col).get(row);
         if (space.isFixed()) {
             return false;
@@ -57,11 +57,11 @@ public class Board {
         return true;
     }
 
-    public void reset(){
+    public void reset() {
         spaces.forEach(c -> c.forEach(Space::clearSpace));
     }
 
-    public boolean gameIsFinished(){
+    public boolean gameIsFinished() {
         return !hasErros() && getStatus() == COMPLETE;
     }
 

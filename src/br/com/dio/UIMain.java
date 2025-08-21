@@ -14,5 +14,4 @@ public class UIMain {
         var mainsScreen = new MainScreen(gameConfig);
         mainsScreen.buildMainScreen();
     }
-
 }
